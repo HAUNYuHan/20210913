@@ -13,7 +13,7 @@ Anaconda 的特色
 ### 1.1.2 Anaconda Prompt管理模組
 
 ### 啟動Anaconda Prompt
--安裝指令
+>安裝指令
 
 | 功能 | pip指令 | conda指令 |
 | --- | --- | --- |
@@ -21,8 +21,40 @@ Anaconda 的特色
 | 更新模組 | pip install -U 模組名稱 | conda update 模組名稱 |
 | 安裝模組 | pip install 模組名稱 | conda install 模組名稱 |
 | 移除模組 | pip uninstall 模組名稱 | conda remove 模組名稱 |
+
 ### 1.1.3 Anaconda Prompt執行py程式檔案
+```
+python 檔案路徑
+
+>sum.py
+
+a = 12
+b = 34
+sum = a + b
+print("總和 = " + str(sum))
+
+```
+
 ### 1.1.4 Anaconda Prompt建立虛擬環境
+```
+>建立虛擬環境
+conda creat -n 虛擬環境名稱 python=版本 anaconda
+
+>切換虛擬環境
+activate 虛擬環境名稱
+
+>關閉虛擬環境
+conda deactivate
+
+>複製目前環境
+conda creat -n 虛擬環境名稱 --clone root
+
+>命令查看目前所有虛擬環境名稱
+conda info -e
+
+>移除虛擬環境
+conda remove -n 虛擬環境名稱 --all
+```
 ## 1.2 Spyder編輯器
 ### 1.2.1 啟動Spyder編輯器及檔案管理
 ### 1.2.2 Spyder簡易智慧輸入
