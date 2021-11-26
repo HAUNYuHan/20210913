@@ -18,6 +18,9 @@ Anaconda 的特色
 | 功能 | pip指令 | conda指令 |
 | --- | --- | --- |
 | 查詢模組列表 | pip list | conda list |
+| 更新模組 | pip install -U 模組名稱 | conda update 模組名稱 |
+| 安裝模組 | pip install 模組名稱 | conda install 模組名稱 |
+| 移除模組 | pip uninstall 模組名稱 | conda remove 模組名稱 |
 ### 1.1.3 Anaconda Prompt執行py程式檔案
 ### 1.1.4 Anaconda Prompt建立虛擬環境
 ## 1.2 Spyder編輯器
