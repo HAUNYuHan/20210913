@@ -14,6 +14,7 @@ Anaconda 的特色
 
 ### 啟動Anaconda Prompt
 -安裝指令
+
 ｜功能｜pip指令｜conda指令｜
 
 ### 1.1.3 Anaconda Prompt執行py程式檔案
