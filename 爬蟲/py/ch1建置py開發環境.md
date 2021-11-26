@@ -25,9 +25,9 @@ Anaconda 的特色
 ### 1.1.3 Anaconda Prompt執行py程式檔案
 ```
 python 檔案路徑
-
->sum.py
-
+```
+## sum.py
+```
 a = 12
 b = 34
 sum = a + b
