@@ -64,3 +64,13 @@ conda remove -n 虛擬環境名稱 --all
 ### 1.3.2 Jupyter Notebook簡易智慧輸入
 ### 1.3.3 Jupyter Notebook執行程式
 ### 1.3.4 Jupyter Notebook常用編輯快速鍵
+
+| 快速鍵 | 說明 |
+| Ctrl+Shift+Enter | 執行目前Cell的程式並新增一個Cell |
+| Ctrl+Enter | 執行目前Cell |
+| Enter | 進入Cell啟動編輯模式，可以編輯程式 |
+| Esc | 退出Cell啟動命令模式 |
+| A | 在命令模式時，在目前Cell上方新增一個Cell |
+| B | 在命令模式時，在目前Cell下方新增一個Cell |
+| ↑↓ | 在命令模式時，上下鍵可以移動編輯目標 |
+| D,D | 在命令模式時，連按「D」鍵二次可以移除目前Cell |
