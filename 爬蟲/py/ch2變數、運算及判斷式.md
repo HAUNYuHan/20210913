@@ -127,12 +127,15 @@ not,and,or
 ### 2.2.5 複合指定運算子
 
 ### score.py
+```
 nat = input("請輸入國文成績")
 math = input("請輸入數學成績")
 eng = input("請輸入英文成績")
 sum = int(nat) + int(math) + int(eng) #輸入值需轉換為整數
 average = sum / 3
 print("成績總分:%d ，平均分數:%5.2f" % (sum, average))
+
+```
 ## 2.3 判斷式
 ### 2.3.1 程序流程控制
 ### 2.3.2 單向判斷式(if)
