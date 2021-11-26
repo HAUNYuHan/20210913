@@ -13,7 +13,7 @@ Anaconda 的特色
 ### 1.1.2 Anaconda Prompt管理模組
 
 ### 啟動Anaconda Prompt
-- 安裝指令
+-安裝指令
 ｜功能｜pip指令｜conda指令｜
 
 ### 1.1.3 Anaconda Prompt執行py程式檔案
