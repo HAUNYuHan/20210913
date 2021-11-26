@@ -75,7 +75,7 @@ print(字串 .format(參數列))
 name = "林小明"
 score = 80
 print("{} 的成績為 {}".format(name, score)) #林小明 的成績為 80
-
+```
 ### 2.1.5 資料型別轉換
 ## 2.2 運算式
 ### 2.2.1 input():輸入資料
