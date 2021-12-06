@@ -138,7 +138,80 @@ print("成績總分:%d ，平均分數:%5.2f" % (sum, average))
 ```
 ## 2.3 判斷式
 ### 2.3.1 程序流程控制
+```
+●判斷式
+if...elif...else
+
+●迴圈
+for
+while
+```
 ### 2.3.2 單向判斷式(if)
+```
+if 條件式:
+    程式區塊
+    
+if 條件式: 程式碼
+```
+### password1.py
+```
+pw = input("請輸入密碼:")
+if pw == "1234":
+    print("歡迎光臨!")
+```
 ### 2.3.3 雙向判斷式(if...else)
+```
+if 條件式:
+    程式區塊一
+else:
+    程式區塊二
+```
+### password2.py
+```
+pw = input("請輸入密碼:")
+if pw == "1234" :
+    print("歡迎光臨!")
+else:
+    print("密碼錯誤!")
+```
 ### 2.3.4 多向判斷式(if...else...else)
+```
+if 條件式一:
+    程式區塊一
+elif 條件式二:
+    程式區塊二
+elif 條件式三:
+    ...
+else :
+    程式區塊else
+```
+### grade.py
+```
+score = (int(input("請輸入成績"))
+if(score) >= 90:
+    print("優等")
+elif (score) >= 80:
+    print("甲等")
+elif (score) >= 70:
+    print("乙等")
+elif (score) >= 60:
+    print("丙等")
+else:
+    print("丁等")
+``` 
 ### 2.3.5 巢狀判斷式
+### discount.py
+```
+money = int(input("請輸入購物金額: "))
+if(money >= 10000):
+  if(money >= 100000):
+    print(money * 0.8, end=" 元\n")
+  elif(money >= 50000):
+    print(money * 0.85, end=" 元\n")
+  elif(money >= 30000):
+    print(money * 0.9, end=" 元\n")
+  else:
+    print(money * 0.95, end=" 元\n")
+else:
+  print(money, end=" 元\n")
+```
