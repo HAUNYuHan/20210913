@@ -20,8 +20,28 @@ print(list5[1][1]) # abcd
 ```
 ### list1.py
 ```
+score = [85, 79, 93]
+print("國文成績 : %d 分" % score[0])
+print("數學成績 : %d 分" % score[1])
+print("英文成績 : %d 分" % score[2])
 ```
 ## 3.1.2 rang函式
+```
+>串列變數 = range(整數值)
+
+r1 = range(5)
+print(list(r1)) #[0,1,2,3,4]
+
+>串列變數 = range(起始值, 終止值)
+
+r2 = range(3, 8) #list(r2)=[3,4,5,6,7]
+r3 = range(-6, -2) #list(r3)=[-6,-5,-4,-3]
+
+>串列變數 = range(起始值, 終止值, 間隔值)
+
+r4 = range(3, 8, 1) #list(r4)=[3,4,5,6,7]
+r5 = range(3, 8, 2) #list(r5)=[3,5,7]
+```
 ## 3.1.3
 ## 3.1.4
 ## 3.1.5
