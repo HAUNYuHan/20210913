@@ -149,5 +149,26 @@ $ ./test.sh   
 | 名稱 | 描述 |
 | --- | --- |
 | path |命令搜尋路徑，以冒號為分隔號，注意與DOS下不同是，當前目錄不再系統路徑 |
-
+| home | 使用者home目錄的路徑名，是cd命令的預設引數 |
+| columns | 定義了命令編輯模式下可使用命令列的長度 |
+| editor | 預設的行編輯器 |
+| visual | 預設的可是編輯器 |
+| fcedit | 命令fc使用的編輯器 |
+| histsize | 命令歷史檔案 |
+| histfilesize | 命令歷史檔案中包含最大行數 |
+| ifs | 定義shell使用的分隔號 |
+| logname | 使用者登入名 |
+| mail | 指向一個需要shell監視其修改時間的檔案，當該檔案修改後，shell將發訊息You have mail給使用者 |
+| mailcheck | shell檢查mail檔案的週期，單位是秒 |
+| mailpath | 功能與mail類似，但可以用一組檔案，以冒號分隔，每個檔案後可跟一個問號和一條發向使用者訊息 |
+| shell | shell的路徑名 |
+| term | 終端型別 |
+| tmout | shell自動退出時間，單位為秒，若設為0則禁止shell自動退出 |
+| prompt_command | 指定在主命令提示符前應執行命令 |
+| ps1 | 主命令提示符 |
+| ps2 | 二級命令提示符，命令執行過程中要求輸入資料時用 |
+| ps3 | select的命令提示符 |
+| ps4 | 除錯命令提示符 |
+| manpath | 尋找手冊業的路徑，以冒號分隔 |
+| ld_library_path | 尋找酷的路徑，以冒號分隔 |
 # Shell Script
