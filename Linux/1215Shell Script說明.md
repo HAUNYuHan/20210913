@@ -118,5 +118,34 @@ a=2
 ```
 ## shell中的陣列
 ```
+● shell變數中還能設定陣列，但是不同的shell版本有不同陣列賦值方法，而bourne shell 中不支援陣列方式。
+● shell有兩種賦值方式，第一種是直接用下標賦值：
+name[0]="Tom"
+name[1]="Tomy"
+name[2]="John"
+● 訪問陣列元素的方法使用${name[index]}的方式。
+```
+## bash中賦值
+```
+>#!/bin/bash
+name=("Tom" "Tomy" "John")
+for i in 0 1 2
+do echo $i:${name[$i]} ;
+done
+
+>結果是：
+$ ./test.sh   
+0:Tom
+1:Tomy
+2:John
+```
+## shell環境變數
+```
+● shell 環境變數是所有shell 程式都會接受的引數。
+● shell程式執行時，都會接收一組變數，這組變數就是環境變數。
+● 常用的環境變數：
+| 名稱 | 描述 |
+| ---- | ---- |
+|      |       |
 ```
 # Shell Script
