@@ -63,8 +63,60 @@ $ ./example2.sh Usage example2.sh     
 "Usage: $0 string file";
 Found "Usage" in example2.sh
 ```
-## 使用者變數
+## Shell使用者變數
 ```
+● 使用者定義的變數必須由字母數字及底線組成
+● 變數名的第一個字元不能為數字
+● 與其它UNIX名字一樣,變數名是大小寫敏感的
+● 對於使用者變數,使用者可按如下方式賦值:
+● name="Winter" 
+● 引用變數時，需要在前面加上 $ 號。
+  name="Winter"WINTERN=$nameecho "Hello $WINTERN!"
+● 輸出結果：
+  Hello Winter!
+● 注意：變數和「=」之間不要有空格，「=」和賦值也不要有空格，否則shell不會認為變數被定義。
 
+>使用者技巧
+● 用變數和其他字元組成新的字
+● 需要把變數用{}括起
+  SAT=Saturecho Today is ${SAT}day輸出結果是： Today is Saturday
+● 為了避免變數名和別的字元產生混淆，最好養成習慣把變數名用{}括起來。
+
+>unset指令
+● 對於未賦值的變數, Shell以空值對待。
+● 使用者也可以用unset命令清除給變數賦的值。
+
+>#!/bin/sh
+echo "a=$a" ;
+a=2
+echo "a=$a" ;
+unset a
+echo "a=$a" ;
+
+>結果是:
+$ ./test.sh
+a=
+a=2
+a=
+
+>避免程式一不小心對變數進行修改
+在shell中，對於使用者變數，可以使用修飾符 “readonly”
+
+>#!/bin/sh
+echo "a=$a" ;
+#下面增加了readonly
+readonly a=2   
+echo "a=$a" ;
+unset a
+echo "a=$a" ;
+
+>結果：
+$ ./test.sh
+a=
+a=2
+a=2
+```
+## shell中的陣列
+```
 ```
 # Shell Script
